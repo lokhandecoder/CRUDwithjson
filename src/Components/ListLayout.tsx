@@ -12,7 +12,7 @@ function ListLayout() {
     <div className="App">
       <div className="grid">
         <ul className="p-8" style={{ paddingLeft: '30%', paddingRight: '30%' }}>
-        <h1>FE Assessment by Amit Lokhande</h1>
+        <h1 style={{ color: "white", fontSize: "24px"}}>CRUD with json by Amit Lokhande</h1>
           <li className="my-2">
             <input
               type="text"

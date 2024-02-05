@@ -48,7 +48,7 @@ function Card ({ searchTerm }: { searchTerm: string }) {
   return (
     <div>
       {filteredCelebrity.map((character, index) => (
-        <Accordion key={character.id} style={{ marginBottom: '16px' }}>
+        <Accordion key={character.id} style={{ marginBottom: '16px', backgroundColor: "#c6ffdd" }}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls={`panel${character.id}-content`}
@@ -73,9 +73,10 @@ function Card ({ searchTerm }: { searchTerm: string }) {
                       handleFieldChange(index, "dob", e.target.value)
                     }
                     className={`border rounded p-3 w-full mt-1 focus:border-blue-500`}
+                    style={{ backgroundColor: "#c6ffdd"}}
                   />
                 ) : (
-                  <Item sx={{ p: 2, border: "1px solid #000" }}>
+                  <Item sx={{ p: 2, border: "1px solid #000",backgroundColor: "#c6ffdd" }}>
                     {calculateAge(character.dob)} years
                   </Item>
                 )}
